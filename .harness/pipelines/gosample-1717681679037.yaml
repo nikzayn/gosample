@@ -20,13 +20,10 @@ pipeline:
           execution:
             steps:
               - step:
-                  identifier: build_go_app
-                  name: Build Go App
+                  identifier: gobuild
+                  name: go_build
                   spec:
-                    command: |-
-                      echo "Welcome to Harness CI"
-                      go build
-                      go test
+                    command: go build
                   timeout: ""
                   type: Run
               - step:
