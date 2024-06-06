@@ -1,0 +1,14 @@
+inputSet:
+  name: Build_nikzayn_gosample_1717681701097-pr-trigger-input-set
+  identifier: Build_nikzayn_gosample_1717681701097prtriggerinputset
+  orgIdentifier: default
+  projectIdentifier: default_project
+  pipeline:
+    identifier: Build_nikzayn_gosample_1717681701097
+    properties:
+      ci:
+        codebase:
+          build:
+            type: PR
+            spec:
+              number: <+trigger.prNumber>
